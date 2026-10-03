@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="gallery.js" defer></script>
+</head>
+
+<body>
+    <h1>Interactive Photo Gallery</h1>
+
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <div class="gallery">
+        <img class="preview"
+            alt="Night view of the famous Hue Citadel in Vietnam."
+            src="https://images.pexels.com/photos/37615202/pexels-photo-37615202.jpeg" onmouseover="upDate(this)"
+            onmouseout="undo()">
+
+        <img class="preview"
+            alt="A beautiful Chinese-style pagoda."
+            src="https://images.pexels.com/photos/12590953/pexels-photo-12590953.jpeg" onmouseover="upDate(this)"
+            onmouseout="undo()">
+
+        <img class="preview"
+            alt="A captivating view of Wat Arun Temple at the Bangkok riverside."
+            src="https://images.pexels.com/photos/30073413/pexels-photo-30073413.jpeg" onmouseover="upDate(this)"
+            onmouseout="undo()">
+    </div>
+</body>
+
+</html>
